@@ -19,3 +19,12 @@ export const getLoggedUser = () => {
         return dispatch(setCurrUser(loggedUser))
     }
 }
+
+export const transfer = (fund, contact) => {
+    return (dispatch) => {
+        const user = UserService.transferFund(fund, contact);
+        console.log(user);
+        
+        return dispatch(setCurrUser(user))
+    }
+}

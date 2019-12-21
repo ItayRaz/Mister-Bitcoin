@@ -15,9 +15,9 @@ const setContacts = (contacts) => {
     return {type: 'SET_CONTACTS', contacts}
 }
 
-export const loadContacts = () => {
+export const loadContacts = (filter) => {
     return async (dispatch) => {
-        const contacts = await ContactService.getContacts();        
+        const contacts = await ContactService.getContacts(filter);        
         return dispatch(setContacts(contacts));
     }
 } 

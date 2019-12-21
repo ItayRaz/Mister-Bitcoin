@@ -197,9 +197,7 @@ function getEmptyContact() {
   }
 }
 
-function filter (term) {
-  console.log(term);
-  
+function filter (term) {  
   term = term.toLocaleLowerCase()
   return contacts.filter( contact => {
     return contact.name.toLocaleLowerCase().includes(term) ||

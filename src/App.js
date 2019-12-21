@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.scss';
+import './styles/global.scss'
 import { Route, Switch } from 'react-router-dom'
 import  HomePage  from './views/HomePage'
 import  SignUpPage  from './modules/user/views/SignUpPage'

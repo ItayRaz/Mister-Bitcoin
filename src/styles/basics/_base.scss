@@ -1,50 +1,31 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    // margin-top: 70px;
-    // width: 100vw;
-    // max-width: 100vw !important;
-    font-family: Roboto;
-    color: clr7;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-}
-
-button {
-    background: none;
-    border: none;
-    outline: none;
-    font-size: 1.2rem;
-    color: $clr4;
-}
-
-button:hover, select:hover {
-    cursor: pointer;
+  margin: 0;
+  // margin-top: 70px;
+  // width: 100vw;
+  // max-width: 100vw !important;
+  font-family: Roboto;
+  // color: clr7;
 }
 
 a {
-    text-decoration: none;
-    color: $clr4;
-}
-a:hover, .router-link-exact-active {
-    color: $clr4;
+  text-decoration: none;
+  color: black;
 }
 
-img {
-    // width: 100%;
-    object-fit: cover;
+li {
+  list-style: none;
 }
 
-input, select, textarea {
-    background: unset;
-    border: unset;
-    border-bottom: 1px solid black;
-    outline: none;
-    padding: 5px;
-    padding-left: 0;
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1.5px solid lightblue;
+}
+
+button:hover {
+  cursor: pointer;
 }

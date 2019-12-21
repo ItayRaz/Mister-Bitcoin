@@ -7,7 +7,7 @@ export default function Header() {
         <section className="header">
             <Link to="/"><i className="fa fa-home"></i></Link>
             <Link to="/contact"><i className="fa fa-users"></i></Link>
-            <Link to="/statistic">Charts</Link>
+            <Link to="/statistic"><i className="fas fa-chart-line"></i></Link>
         </section>
     )
 }

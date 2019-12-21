@@ -31,11 +31,14 @@ class SignUpPage extends React.Component {
 
     render() {
         return (
-            <section>
-                <form onSubmit= {this.saveUser}>
-                    <label> Your Name:
+            <section className="sign-up-page flex column align-center container">
+                <img src="https://www.buybitcoinworldwide.com/img/goodicons/doublecoin.png" alt=""/>
+                <form className="flex column align-center" onSubmit= {this.saveUser}>
+                    <label className="flex column align-center">
+                    <div>Please Enter Your Name:</div>   
                     <input onChange={this.updateUser} name="name" type="text" />
                     </label>
+                    <button>Sing Up</button>
                 </form>
             </section>
         )

@@ -1,0 +1,41 @@
+label div {
+    margin-right: 10px;
+}
+
+.contact-edit {
+    img {
+        border-radius: 50%;
+        width: 200px;
+        background-color: lightblue;
+        margin-bottom: 25px;
+        align-self: center;
+        margin-top: 15px;
+      }
+    form {
+        justify-content: space-between;
+        height: 150px;
+        input {
+            width: 80vw;
+        }
+    }
+}
+
+.edit-btns {
+    margin-top: 20px;
+    .save-btn {
+        background-color: lightgreen;
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+    }
+    .delete-btn {
+        background-color: red;
+        border: none;
+        padding: 8px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+    }
+}

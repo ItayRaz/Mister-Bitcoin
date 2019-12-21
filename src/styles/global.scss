@@ -10,3 +10,15 @@
 @import 'basics/layout';
 
 // COMPONENTS
+@import 'components/contactList.scss';
+@import 'components/contact-preview.scss';
+@import 'components/header.scss';
+@import 'components/moveList.scss';
+@import 'components/movePreview.scss';
+
+// VIEWS
+@import 'views/homePage.scss';
+@import 'views/contactPage.scss';
+@import 'views/contactDetails.scss';
+@import 'views/contactEditPage.scss';
+@import 'views/signUpPage.scss';

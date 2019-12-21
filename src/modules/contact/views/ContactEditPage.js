@@ -16,7 +16,7 @@ class ContactEditPage extends Component {
         let { id } = this.props.match.params
         if (id) {
             await this.props.loadCurrContact(id);
-            return this.setState({contact: this.props.contact})
+            return this.setState({ contact: this.props.contact })
         }
         else contact = ContactService.getEmptyContact()
         this.setState({ contact })
@@ -50,22 +50,27 @@ class ContactEditPage extends Component {
         const { contact } = this.state;
         return contact && (
             <section className="contact-edit">
-                <h2>Edit</h2>
-                <form action="" onSubmit={this.saveContact}>
-                    <label> Name:
-                    <input onChange={this.updateContact} name="name" type="text" value={contact.name} />
-                    </label>
-                    <label> Email:
-                    <input onChange={this.updateContact} name="email" type="email" value={contact.email} />
-                    </label>
-                    <label> Phone:
-                    <input onChange={this.updateContact} name="phone" type="number" value={contact.phone} />
-                    </label>
-                    <button>
-                        Save Contact
-                    </button>
-                </form>
-                <button onClick={this.removeContact}>Delete</button>
+                <div className="container flex column">
+                    <img src={`https://robohash.org/${contact.name}`} alt="" />
+                    <form className="edit-form flex column">
+                        <label className="flex">
+                            <div>Name:</div>
+                            <input onChange={this.updateContact} name="name" type="text" value={contact.name} />
+                        </label>
+                        <label className="flex">
+                            <div>Email:</div>
+                            <input onChange={this.updateContact} name="email" type="email" value={contact.email} />
+                        </label>
+                        <label className="flex">
+                            <div>Phone:</div>
+                            <input onChange={this.updateContact} name="phone" type="number" value={contact.phone} />
+                        </label>
+                    </form>
+                </div>
+                <div className="edit-btns flex space-evenly">
+                    <button className="save-btn" onClick={this.saveContact}>Save Contact</button>
+                    <button className="delete-btn" onClick={this.removeContact}>Delete</button>
+                </div>
             </section>
         )
     }
